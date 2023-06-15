@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TourMed Web</title>
+    <link rel="stylesheet" href="css/stylee.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/">
+          <img src="img/logo.svg">
+        </a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="search-box">
+        <input type="text" name="produto" class="search-req" placeholder="Tipo da Requisição" required>
+      <input name="produto" class="search-txt" placeholder="Pesquisar" required>
+      <button id="search-btn" type="submit" class="search-btn">BB</button>
+    </div>
+    <div>
+      <table id="tabela-resultados">
+        <thead>
+          <tr>
+            <th>Código de Barras</th>
+            <th>Nome do Medicamento</th>
+            <th>NCM</th>
+            <th>CEST</th>
+            <th>Princípio Ativo</th>
+            <th>Categoria</th>
+            <th>Tipo de Lista</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <!-- Adicione mais linhas conforme necessário -->
+        </tbody>
+      </table>
+    </div>
+    <div id="not-found-overlay" class="overlay">
+        <div class="modal">
+          <h2>Produto não encontrado</h2>
+          <p>O produto que você pesquisou não foi encontrado.</p>
+          <button id="close-btn">Fechar</button>
+        </div>
+      </div>      
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

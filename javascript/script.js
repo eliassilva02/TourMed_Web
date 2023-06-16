@@ -24,18 +24,7 @@ document.querySelector('.search-btn').addEventListener('click', function(event) 
     // Enviar a requisição para a API
     fetch("http://127.0.0.1:5000/med", requestOptions)
       .then(response => response.json())
-      .then(result => {
-        if (result === "Item não encontrado") {
-            var overlay = document.querySelector('.overlay');
-
-            // Função para fechar a tela de produto não encontrado
-            function fecharTela() {
-            overlay.style.display = "block";
-            }
-
-            // Evento de clique no botão fechar
-            document.querySelector('.close-btn').addEventListener('click', fecharTela);
-          } else {
+      .then(result => {{
                     // Obter a referência da tabela
                     var table = document.getElementById("tabela-resultados");
             

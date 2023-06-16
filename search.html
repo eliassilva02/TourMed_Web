@@ -1,71 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TourMed Web</title>
-    <link rel="stylesheet" href="css/stylee.css" />
-  </head>
-
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylee.css">
+    <title>TourMed</title>
+</head>
+<body>
     <header>
-      <nav>
-        <a class="logo" href="/">
-          <img src="img/logo.svg">
-        </a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+        <nav>
+          <a class="logo">
+            <img src="img/Group.svg">
+          </a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Solution</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class = "main-login">
+        <div class="left-login">
+            <h1 class="left-login-item">Desvende o segredo dos<br>Medicamentos</h1><br>
+            <p class="left-login-item">Descubra um novo nível de busca por informações tributárias<br>
+                com a TourMed. Acesse instantaneamente códigos NCM e<br>
+                CEST, simplificando sua jornada fiscal. Economize tempo, evite<br>
+                erros e garanta conformidade com nossa base de dados<br>
+                abrangente e atualizada.</p>
+            <button class="left-login-item">
+              Explorar
+            </button>
+
         </div>
-        <ul class="nav-list">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="search-box">
-        <input type="text" name="produto" class="search-req" placeholder="Tipo da Requisição" required>
-      <input name="produto" class="search-txt" placeholder="Pesquisar" required>
-      <button id="search-btn" type="submit" class="search-btn">BB</button>
-    </div>
-    <div>
-      <table id="tabela-resultados">
-        <thead>
-          <tr>
-            <th>Código de Barras</th>
-            <th>Nome do Medicamento</th>
-            <th>NCM</th>
-            <th>CEST</th>
-            <th>Princípio Ativo</th>
-            <th>Categoria</th>
-            <th>Tipo de Lista</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <!-- Adicione mais linhas conforme necessário -->
-        </tbody>
-      </table>
-    </div>
-    <div id="not-found-overlay" class="overlay">
-        <div class="modal">
-          <h2>Produto não encontrado</h2>
-          <p>O produto que você pesquisou não foi encontrado.</p>
-          <button id="close-btn">Fechar</button>
+        <div class="right-login">
+            <div class="card-login">
+                <img src="img/chemistry lab-amico.svg">
+                </div>
+                </div>
+            </div>
         </div>
-      </div>      
-    <script src="javascript/script.js"></script>
-  </body>
+    </div>
+</body>
 </html>

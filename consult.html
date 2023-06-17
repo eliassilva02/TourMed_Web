@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TourMed Web</title>
+    <link rel="stylesheet" href="css/style_consult.css" />
+  </head>
+
+  <body>
+    <header>
+        <nav>
+          <a class="logo">
+            <img src="img/Group.svg">
+          </a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="consult.html">Solution</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="consulta">
+            <div class="custom-select">
+                <select class="list-susp">
+                    <option value="GTIN">GTIN</option>
+                    <option value="DESCRIÇÃO">DESCRIÇÃO</option>
+                </select>
+            </div>
+        <div class="search-box">
+            <input type="text" name="produto" class="search-txt" placeholder="Pesquisar" required>
+            <button class="image-button">
+                <img src="img/lupa.svg" alt="Botão de imagem" width="21" height="21">
+              </button>
+        </div>
+    </div>    
+    <div>
+      <table id="tabela-resultados">
+        <thead>
+          <tr>
+            <th>Código de Barras</th>
+            <th>Nome do Medicamento</th>
+            <th>NCM</th>
+            <th>CEST</th>
+            <th>Princípio Ativo</th>
+            <th>Categoria</th>
+            <th>Tipo de Lista</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2139812389</td>
+            <td>PARACETAMOL</td>
+            <td>30449099</td>
+            <td>13.002.01</td>
+            <td>PARACETAMOL</td>
+            <td>GENÉRICO</td>
+            <td>NEGATIVA</td>
+          </tr>
+          <!-- Adicione mais linhas conforme necessário -->
+        </tbody>
+      </table>
+    </div>
+      </div>      
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

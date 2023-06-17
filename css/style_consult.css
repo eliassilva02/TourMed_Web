@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+body{
+  margin: 0;
+  background-color: #182145;
+}
+
+a {
+    color: #182145;
+    text-decoration: none;
+    transition: 1s;
+    font-family: montserrat,Sans-serif;
+    font-size: 19px;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background: #FFFFFF;
+    height: 10vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 0.3px;
+    margin-left: 32px;
+  }
+
+  .consulta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+  }
+
+  .custom-select{
+    width: 150px;
+    height: calc(1.8125rem + 2px);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.list-susp {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(60, 60, 67);
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 11px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+ .search-box{
+    width: 478px;
+    height: calc(1.8125rem + 2px);
+    background: #FFFFFF;
+    margin-left: 30px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #0f2f76;
+    padding: 5px;
+}
+
+ .search-txt{
+    border: none;
+    width: 450px;
+    margin-left: 8px;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.search-txt::placeholder {
+    text-align: left;
+    color: rgba(60, 60, 67, 0.6);
+}
+
+input:valid {
+    color: rgba(60, 60, 67); /* Muda a cor da fonte quando o usuario vai digitar */
+
+  }
+
+  input:focus {
+    caret-color: rgba(60, 60, 67, 0.6) /* Muda a cor da barrinha que fica piscando quando o usuario clica */
+  }
+
+.image-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+
+
+table {
+    border-collapse:collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-color: #ddd;
+  }
+
+  th, td {
+    padding: 8px;
+    color: #000;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    text-transform: uppercase;
+  }
+
+  th {
+    background-color: #f1f1f1;
+  }
+
+  tr {
+    background-color: #f5f5f5;
+  }
